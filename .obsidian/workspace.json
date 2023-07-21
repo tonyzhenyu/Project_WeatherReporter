@@ -1,0 +1,155 @@
+{
+  "main": {
+    "id": "f43e548969247bf1",
+    "type": "split",
+    "children": [
+      {
+        "id": "bc685ffe6a4236ff",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1cc43de4875948a0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Doc_Proj_WeatherReporter/涌现式交互.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3203d0702ff670cd",
+    "type": "split",
+    "children": [
+      {
+        "id": "4b7d88283f683bb5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fd914668ff35dd50",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "70e05f4ec4c8a5cf",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b86ebbb1f1d6e525",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "30bfeef84dcc3bef",
+    "type": "split",
+    "children": [
+      {
+        "id": "0a34b236c0e2882a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e8edcb0ba5f1eccb",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Doc_Proj_WeatherReporter/涌现式交互.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d50d66816b1ef508",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Doc_Proj_WeatherReporter/涌现式交互.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "76807f17dc5a06ba",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "447d9ae1fc7aa445",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Doc_Proj_WeatherReporter/涌现式交互.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "1cc43de4875948a0",
+  "lastOpenFiles": [
+    "Doc_Proj_WeatherReporter/天气实验室.md",
+    "Doc_Proj_WeatherReporter/涌现式交互.md",
+    "未命名"
+  ]
+}
