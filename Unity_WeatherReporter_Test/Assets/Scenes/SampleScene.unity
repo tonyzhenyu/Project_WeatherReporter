@@ -154,6 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   computeShader: {fileID: 7200000, guid: 741bbe86eb265e14c931146644bdec9d, type: 3}
   tex: {fileID: 2800000, guid: fe76a69910705184cab302b701eaed88, type: 3}
+  size: 32
 --- !u!4 &1016821981
 Transform:
   m_ObjectHideFlags: 0

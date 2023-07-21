@@ -18,10 +18,10 @@ void ReadTexture (uint3 id : SV_DispatchThreadID)
     
     uint index = id.y * 32* _CDatas_F01_Width_GroupCount + id.x;
 
-    uint x = _CTex_F01[id.xy].x * 255;
-    uint y = _CTex_F01[id.xy].y * 255;
-    uint z = _CTex_F01[id.xy].z * 255;
-    uint w = _CTex_F01[id.xy].w * 255;
+    uint x = _CTex_F01[id.xy].x * 255* _CDatas_F01_Width_GroupCount;
+    uint y = _CTex_F01[id.xy].y * 255* _CDatas_F01_Width_GroupCount;
+    uint z = _CTex_F01[id.xy].z * 255* _CDatas_F01_Width_GroupCount;
+    uint w = _CTex_F01[id.xy].w * 255* _CDatas_F01_Width_GroupCount;
     
-    _CDatas_F01[index] = uint4(x* _CDatas_F01_Width_GroupCount,y* _CDatas_F01_Width_GroupCount,z* _CDatas_F01_Width_GroupCount*10,w* _CDatas_F01_Width_GroupCount);
+    _CDatas_F01[index] = uint4(x,y,z,w);
 }
