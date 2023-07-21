@@ -5,23 +5,23 @@
 // with cs.SetTexture
 Texture2D<half4> _CTex_F01;
 RWStructuredBuffer<uint4> _CDatas_F01;
-uint _CDatas_F01_Stride;
+uint _CDatas_F01_Width_GroupCount;
 
 
 
-[numthreads(8,8,1)]
+[numthreads(32,32,1)]
 void ReadTexture (uint3 id : SV_DispatchThreadID)
 {
     // TODO: insert actual code here!
 
     //Result[id.xy] = float4(id.x & id.y, (id.x & 15)/15.0, (id.y & 15)/15.0, 0.0);
-
-    uint index = id.y * _CDatas_F01_Stride + id.x;
+    
+    uint index = id.y * 32* _CDatas_F01_Width_GroupCount + id.x;
 
     uint x = _CTex_F01[id.xy].x * 255;
     uint y = _CTex_F01[id.xy].y * 255;
     uint z = _CTex_F01[id.xy].z * 255;
     uint w = _CTex_F01[id.xy].w * 255;
     
-    _CDatas_F01[index] = uint4(x,y,z,w);
+    _CDatas_F01[index] = uint4(x* _CDatas_F01_Width_GroupCount,y* _CDatas_F01_Width_GroupCount,z* _CDatas_F01_Width_GroupCount*10,w* _CDatas_F01_Width_GroupCount);
 }

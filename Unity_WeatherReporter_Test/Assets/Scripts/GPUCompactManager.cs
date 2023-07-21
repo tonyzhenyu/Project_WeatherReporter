@@ -94,7 +94,7 @@ public class GPUCompact
     {
         public static int tex = Shader.PropertyToID("_CTex_F01");
         public static int datas = Shader.PropertyToID("_CDatas_F01");
-        public static int stride = Shader.PropertyToID("_CDatas_F01_Stride");
+        public static int width_GroupCount = Shader.PropertyToID("_CDatas_F01_Width_GroupCount");
 
     }
 
@@ -112,14 +112,15 @@ public class GPUCompact
         int k = m_computeShader.FindKernel("ReadTexture");
 
         int stride = Marshal.SizeOf<int4>();
-
+        int widthGroupCount = m_texture.width / 32;
+        int heightGroupCount = m_texture.height / 32;
         cb_layer01 = new ComputeBuffer(m_texture.width * m_texture.height, stride);
         cb_layer01.SetData(data);
-        m_computeShader.SetInt(ID.stride, stride);
+        m_computeShader.SetInt(ID.width_GroupCount, widthGroupCount);
         m_computeShader.SetTexture(k, ID.tex, m_texture);
         m_computeShader.SetBuffer(k, ID.datas, cb_layer01);
 
-        m_computeShader.Dispatch(k, m_texture.width/ 8, m_texture.height / 8, 1);
+        m_computeShader.Dispatch(k, widthGroupCount, heightGroupCount, 1);
         
     }
     public void Read()
